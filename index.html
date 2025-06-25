@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gap-fill | Travelling</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <video id="bg-video" autoplay muted loop playsinline preload="auto">
+    <source src="bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="card">
+    <h1>Gap-fill: Travelling</h1>
+  
+    <p class="instructions">
+      Type the missing word or phrase in each blank. Hover the <strong>?</strong> for a hint,  
+      then click <em>Check your score</em> to see how you did.
+    </p>
+  
+    <p>
+      We had everything ready — our 
+      <span class="blank" data-answer="passports">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">a travel document with your photo</span>
+      </span> 
+      and our 
+      <span class="blank" data-answer="boarding passes">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">you show this to get on the plane</span>
+      </span>
+      were in hand. The airport was loud and 
+      <span class="blank" data-answer="noisy">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">the opposite of quiet</span>
+      </span>
+      , but we found our gate quickly.
+    </p>
+  
+    <p>
+      While we 
+      <span class="blank" data-answer="were waiting">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">not doing anything, passing time</span>
+      </span> 
+      for the flight, I read the 
+      <span class="blank" data-answer="guidebook">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">a small book with travel info</span>
+      </span> 
+      and marked some places to visit.
+    </p>
+  
+    <p>
+      After we landed, we took a taxi to a 
+      <span class="blank" data-answer="secluded">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">quiet and private, away from people</span>
+      </span>
+      hotel near the sea. The next day, we 
+      <span class="blank" data-answer="rented">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">paid money to use something</span>
+      </span> 
+      bikes and 
+      <span class="blank" data-answer="explored">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">visited and looked around</span>
+      </span> 
+      the town.
+    </p>
+  
+    <p>
+      The view from the hill was 
+      <span class="blank" data-answer="unbelievable">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">so amazing, it was hard to believe</span>
+      </span>
+      . We stopped at a café and tried 
+      <span class="blank" data-answer="local food">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">meals from the region</span>
+      </span> 
+      before heading back.
+    </p>
+  
+    <button id="check">Check your score</button>
+  </div>
+  
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>📝 Your Results</h2>
+      <p id="modal-text"></p>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
